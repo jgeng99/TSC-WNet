@@ -271,9 +271,9 @@ def train(i,train_iter, test_iter, net, loss, optimizer, device, num_epochs):
 
 
 batch_size = 2
-k = 5
-image_dir='data/mask.txt'
-num_epochs=10
+k = 3 # originally 5
+image_dir="data/mask_new.txt" # originally data/mask.txt
+num_epochs=5
 k_fold(k,image_dir,num_epochs,device,batch_size)
 
 
